@@ -1,0 +1,17 @@
+
+
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <div>
+        <button class="btn-primary" routerLink="">Back</button>
+        <mat-form-field appearance="fill">
+            <mat-label>Option</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let option of section_options" [value]="option.value" (onSelectionChange)="changeLeagueSection($event)">
+                {{option.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+      </div>
+    </div>
+  </nav>

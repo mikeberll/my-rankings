@@ -1,0 +1,11 @@
+<div>
+    <nav class="navbar navbar-light bg-light">
+        
+        <div class="container-fluid">
+            <button class="btn-primary" (click)="openSidenav()" *ngIf="!sidenav_open">Open</button>
+            <button class="btn-primary" (click)="closeSidenav()" *ngIf="sidenav_open">Close</button>
+          <a class="navbar-brand">Home</a>
+          <button class="btn-primary" routerLink="create-match">New Match</button>
+        </div>
+      </nav>
+</div>

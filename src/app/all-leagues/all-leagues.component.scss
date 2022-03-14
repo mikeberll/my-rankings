@@ -1,0 +1,16 @@
+.mat-list-icon {
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .container {
+    height: 200px;
+    position: relative;
+  }

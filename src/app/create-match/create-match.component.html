@@ -1,0 +1,38 @@
+<form class="d-flex">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+<div>
+    <mat-selection-list #players>
+        <mat-list-item *ngFor="let player of leaguePlayers">
+            <div mat-line (click)="manageSelectedPlayer(player)">
+                {{player}}
+            </div>
+            <mat-divider></mat-divider>
+
+        </mat-list-item>
+
+      </mat-selection-list>
+      
+      <p>
+        Options selected: {{players.selectedOptions.selected.length}}
+      </p>
+      <mat-divider></mat-divider>
+      <form  #result="ngForm" (ngSubmit)="onSubmit(result)">
+        <mat-selection-list #winners="ngModel" name="winners" ngModel>
+            <mat-list-option *ngFor="let player of selectedPlayers" ngDefaultControl value="{{player}}" id="{{player}}">
+              {{player}}
+            </mat-list-option>
+          </mat-selection-list>
+          <div>
+            <label> Insert points :</label>
+            <input name="points" #points="ngModel" ngModel required>
+            <button class="btn-primary" type="submit">Submit</button>
+          </div>
+          
+
+      </form>
+      
+      
+</div>
+

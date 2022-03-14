@@ -1,0 +1,23 @@
+<mat-list>
+    <div mat-subheader>Leagues</div>
+    <mat-list-item *ngFor="let folder of folders">
+            <mat-icon mat-list-icon routerLink="/league/{{folder.updated}}">home</mat-icon>
+            <div mat-line routerLink="/league/{{folder.updated}}">
+              <div class="column">
+                {{folder.name}}
+              </div>
+              <div class="column-2">
+                figa
+            </div>  
+          </div>
+      
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list>
+  <div class="container">
+    <div class="vertical-center">
+        <button class="btn-primary" routerLink="/create-your-league">Create your League</button>
+      </div>
+  </div>
+  
+  

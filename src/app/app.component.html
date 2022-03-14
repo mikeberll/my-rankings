@@ -1,0 +1,41 @@
+
+<body>
+    <main>
+    <section>
+        
+        <app-navbar-container></app-navbar-container>
+
+        <router-outlet></router-outlet>
+    </section>
+    
+    </main> 
+    <div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
+        <div
+            class="sidebar-close"
+            (click)="sidebarShow = !sidebarShow"
+        >
+            X
+        </div>
+          <app-sidebar></app-sidebar>
+    </div>
+
+</body>
+
+
+<!-- <div class="d-flex" id="wrapper">
+	
+	
+  <app-sidebar></app-sidebar>
+	<div id="page-content-wrapper">
+    
+		<div id="main-content" class="container-fluid">
+      <app-navbar-container></app-navbar-container>
+
+      <router-outlet></router-outlet>
+      
+		</div>
+	</div>
+</div> -->
+
+
+
