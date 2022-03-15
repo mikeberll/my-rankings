@@ -31,6 +31,7 @@ import { FormsModule } from '@angular/forms';
 
 import { MatOptionModule } from '@angular/material/core';
 import { LeagueModule } from './league/league.module';
+import { LeagueRoutingModule } from './league/league-routing.module';
 
 
 @NgModule({

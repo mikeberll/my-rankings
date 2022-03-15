@@ -27,8 +27,8 @@ export class NavbarLeagueComponent implements OnInit {
   }
 
   changeLeagueSection(option : MatOptionSelectionChange<string>) {
-    console.log(option.source.value);
-    this.router.navigate(['/league/:id/' + option.source.value]);
+    console.log(option.source);
+    this.router.navigate(['/league/10/' + option.source.value]);
 
   }
 

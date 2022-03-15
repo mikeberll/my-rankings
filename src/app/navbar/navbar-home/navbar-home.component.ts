@@ -24,8 +24,8 @@ export class NavbarHomeComponent implements OnInit {
     this.sidenavService.openSidenav();
   }
 
-  closeSidenav() {
+  /* closeSidenav() {
     this.sidenavService.closeSidenav();
-  }
+  } */
 
 }
